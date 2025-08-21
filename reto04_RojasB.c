@@ -20,7 +20,7 @@ int main() {
 
     // Reserva dinámica de memoria con calloc
     ptr = (int*) calloc(n, sizeof(int));
-    if (ptr == NULL) {
+    if (ptr == NULL) {//condicion de si es nulo el ptr
         printf("Error! memory not allocated.\n"); // Mensaje de error
         exit(0);  // Finaliza el programa si no se asigna memoria
     }
