@@ -6,7 +6,7 @@ Pontificia Universidad Javeriana
  * Tema: Memoria dinamica
 *********************************/
 
-
+//librerias
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -15,7 +15,7 @@ Pontificia Universidad Javeriana
 int main() {
     int n, i, *ptr, sum = 0;  // Declaración de variables
 
-    printf("Enter number elements: ");
+    printf("Enter number elements: ");//ingreso de datos 
     scanf("%d", &n);
 
     // Reserva dinámica de memoria con calloc
@@ -27,7 +27,7 @@ int main() {
 
     // Lectura de elementos
     printf("Enter elements: ");
-    for (i = 0; i < n; i++) {   // Corrección: condición de bucle
+    for (i = 0; i < n; i++) {   // iniciación de bucle
         scanf("%d", ptr + i);   // Lectura del elemento en la posición i
         sum += *(ptr + i);      // Acumula la suma
     }
