@@ -21,8 +21,8 @@ ptr=malloc(15*sizeof(*ptr)); // espacio de memoria para el puntero
 if(ptr!= NULL){//verificar si es distinto de nulo
 *(ptr+5)=480; /*assign 480 to sixth integer*/
 }
-printf("Cadena copiada\n");
-free(ptr);
+printf("Cadena copiada\n");// mensjae 
+free(ptr);//libera memoria 
 return 0; 
 }
 
