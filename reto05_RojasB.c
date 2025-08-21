@@ -15,14 +15,14 @@ int main() {
     int *ptr, i, n1, n2; // declaración de variables 
 
     printf("Enter size: ");
-    scanf("%d", &n1);
+    scanf("%d", &n1);//el dato ingresado debe ser entero y se guarda en n1
 
     // asigna espacio de memoria
     ptr = (int*) malloc(n1 * sizeof(int));
 
     printf("Addresses of previously allocated memory:\n");
     for (i = 0; i < n1; i++)  // bucle 
-        printf("p = %p\n", ptr + i);
+        printf("p = %p\n", ptr + i);// imprimi dirección de memoria 
 
     printf("\nEnter the new size: ");
     scanf("%d", &n2);
