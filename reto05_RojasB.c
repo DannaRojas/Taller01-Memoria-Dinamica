@@ -32,7 +32,7 @@ int main() {
 
     printf("Addresses of newly allocated memory:\n");
     for (i = 0; i < n2; i++)
-        printf("p = %p\n", ptr + i);
+        printf("p = %p\n", ptr + i);// Imprime la nueva direccion de memoria 
 
     // liberar memoria
     free(ptr);
